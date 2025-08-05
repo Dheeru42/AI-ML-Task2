@@ -27,34 +27,32 @@ df = pd.read_csv("Titanic-Dataset.csv")
 - Used `df.describe()` for statistical summary
 - Used `df.duplicated().sum()` to check for duplicates
 
-### 5. **Clean & Save the Dataset**
-- Saved cleaned data to a new CSV: `new_df.csv`
-- Reloaded data and dropped the index column `Unnamed: 0`
-
-### 6. **Target Variable Exploration**
+### 5. **Target Variable Exploration**
 - Count of survivors (`Survived`)
 - Bar Chart and Pie Chart for `Survived` column
 
-### 7. **Univariate Analysis**
+### 6. **Univariate Analysis**
 - **Categorical Columns:** Bar plots and pie charts for `Pclass`, `Sex`, `Embarked`, etc.
 - **Continuous Columns:** Histograms for `Age`, `Fare`
 
-### 8. **Bivariate Analysis**
+### 7. **Bivariate Analysis**
 - Bar plots comparing `Survived` with:
   - `Sex`
   - `Pclass`
   - `Embarked`
   - `SibSp`, `Parch`
 
-### 9. **Box Plots for Outlier Detection**
+### 8. **Box Plots for Outlier Detection**
 - Plotted boxplots for numerical columns:
   - `Age`
   - `Fare`
 
-### 10. **Correlation Analysis**
-- Generated correlation matrix using `.corr()`
+### 9. **Correlation Analysis**
+- Generated pair graphs using `sns.pairplot()`
 - Visualized using `sns.heatmap()`
 
+### 10. **Missing Value Analysis**
+- Visualized using `sns.heatmap()`
 ---
 
 ## 📊 Visualizations Used
