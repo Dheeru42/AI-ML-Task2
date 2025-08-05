@@ -10,7 +10,6 @@
 ### 1. **Import Libraries**
 - Core libraries: `pandas`, `matplotlib`, `seaborn`
 - For handling warnings: `warnings`
-- Missing data imputation: `sklearn.impute.SimpleImputer`
 
 ### 2. **Load the Dataset**
 ```python
@@ -28,36 +27,31 @@ df = pd.read_csv("Titanic-Dataset.csv")
 - Used `df.describe()` for statistical summary
 - Used `df.duplicated().sum()` to check for duplicates
 
-### 5. **Missing Data Imputation**
-- **Categorical Columns:** `Cabin`, `Embarked` imputed using most frequent value (mode)
-- **Numerical Column:** `Age` imputed using mean
-- Converted `Age` column to `int64`
-
-### 6. **Clean & Save the Dataset**
+### 5. **Clean & Save the Dataset**
 - Saved cleaned data to a new CSV: `new_df.csv`
 - Reloaded data and dropped the index column `Unnamed: 0`
 
-### 7. **Target Variable Exploration**
+### 6. **Target Variable Exploration**
 - Count of survivors (`Survived`)
 - Bar Chart and Pie Chart for `Survived` column
 
-### 8. **Univariate Analysis**
+### 7. **Univariate Analysis**
 - **Categorical Columns:** Bar plots and pie charts for `Pclass`, `Sex`, `Embarked`, etc.
 - **Continuous Columns:** Histograms for `Age`, `Fare`
 
-### 9. **Bivariate Analysis**
+### 8. **Bivariate Analysis**
 - Bar plots comparing `Survived` with:
   - `Sex`
   - `Pclass`
   - `Embarked`
   - `SibSp`, `Parch`
 
-### 10. **Box Plots for Outlier Detection**
+### 9. **Box Plots for Outlier Detection**
 - Plotted boxplots for numerical columns:
   - `Age`
   - `Fare`
 
-### 11. **Correlation Analysis**
+### 10. **Correlation Analysis**
 - Generated correlation matrix using `.corr()`
 - Visualized using `sns.heatmap()`
 
@@ -69,11 +63,6 @@ df = pd.read_csv("Titanic-Dataset.csv")
 - Histograms
 - Box Plots
 - Heatmap
-
-## 🧹 Data Cleaning Techniques
-- Removed null values using `SimpleImputer`
-- Removed unnecessary index column
-- Changed data types where necessary
 
 ---
 
